@@ -4,7 +4,7 @@ LABEL maintainer="Hamdi Fourati <contact@hamdifourati.info>"
 
 EXPOSE 3306
 
-ENV CLOUD_SQL_PROXY_VERSION "v1.16"
+ENV CLOUD_SQL_PROXY_VERSION "v1.19.1"
 
 RUN apk add --quiet --no-cache wget ca-certificates && \
     wget -nv https://storage.googleapis.com/cloudsql-proxy/${CLOUD_SQL_PROXY_VERSION}/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy && \
